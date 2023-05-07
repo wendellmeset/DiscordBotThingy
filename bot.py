@@ -1,12 +1,12 @@
 import discord
 from discord.ext import commands
 
-# Define your Discord bot's command prefix
-bot = commands.Bot(command_prefix='!')
-
 # Define your Discord bot's intents
 intents = discord.Intents.default()
 intents.members = True
+
+# Define your Discord bot's command prefix
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 # Define your Discord bot's token
 TOKEN = 'YOUR_DISCORD_BOT_TOKEN_HERE'
